@@ -229,6 +229,7 @@ searchButton.addEventListener('click', () => {
   performSearch();
 });
 
+console.log(window.location.pathname);
 // Initial load
 if(window.location.pathname && (window.location.pathname == "/" || window.location.pathname == "/index.html") ){
   const urlParams = new URLSearchParams(window.location.search);
