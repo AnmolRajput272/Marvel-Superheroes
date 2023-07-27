@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Superheroes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- navbar.html -->
+  <div class="navbar">
+    <a class="logo" href="index.html">Marvel Superheroes Universe</a>
+    <a href="index.html">Home</a>
+    <a href="favorites.html">Favorites</a>
+  </div>
+  <header>
+    <h1>My Favorite Superheroes</h1>
+  </header>
+  <main id="favoriteSuperheroes"></main>
+
+  <script src="scripts.js"></script>
+  <script>
+    // JavaScript code to load and display favorite superheroes from localStorage
+    document.addEventListener("DOMContentLoaded", () => {
+      displayFavoriteSuperheroes();
+    });
+  </script>
+</body>
+</html>
+

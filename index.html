@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Superheroes Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- navbar.html -->
+  <div class="navbar">
+    <a class="logo" href="index.html">Marvel Superheroes Universe</a>
+    <a href="index.html">Home</a>
+    <a href="favorites.html">Favorites</a>
+  </div>
+  <header>
+    <h1>Marvel Superheroes</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search superhero...">
+      <button class="search-btn" id="searchButton">Search</button>
+    </div>
+  </header>
+  <main id="superheroesList">
+    <div id="loadingIndicator"><img src="assets/loading.gif" height="300px" width="300px" /></div>
+  </main>
+  <div id="pagination"></div>
+  <script src="scripts.js"></script>
+</body>
+</html>
+
