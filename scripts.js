@@ -219,6 +219,14 @@ function performSearch() {
   fetchSuperheroes(query);
 }
 
+function displayAllSuperheroes(){
+	const urlParams = new URLSearchParams(window.location.search);
+  let query = urlParams.get('query') || '';
+  query = query.trim();
+  document.getElementById('searchInput').value = query;
+  fetchSuperheroes(query);
+}
+
 searchInput.addEventListener('keyup', event => {
   if (event.key === 'Enter') {
     performSearch();
@@ -232,10 +240,5 @@ searchButton.addEventListener('click', () => {
 console.log(window.location.pathname);
 // Initial load
 if(window.location.pathname && (window.location.pathname == "/" || window.location.pathname == "/index.html") ){
-  const urlParams = new URLSearchParams(window.location.search);
-  let query = urlParams.get('query') || '';
-  query = query.trim();
-  document.getElementById('searchInput').value = query;
-  fetchSuperheroes(query);
 }
 
